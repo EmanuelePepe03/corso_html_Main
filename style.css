@@ -100,15 +100,15 @@ div.col_1 {
     min-height: 348px;
 }
 div.col_riga_1, div.col_riga_2 {
-    min-height: 160px;
+    min-height: 180px;
 }
 div.articolo {
-    min-height: 191px;
+    min-height: 190px;
     display: inline-block;
     width: 33%;
 }
 div.articolo_verticale {
-    min-height: 160px;
+    min-height: 180px;
 }
 div.colonna_1, div.colonna_2 {
     border: 1px solid black;
