@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont_nav {
+    box-sizing: border-box;
+    display: block;
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 64px;
+    line-height: 32px;
+    width: 1512px;
+}
+.NavBar {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(232, 234, 237);
+    display: flex;
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 64px;
+    justify-content: flex-end;
+    line-height: 32px;
+    margin-bottom: 0px;
+    margin-left: 176px;
+    margin-right: 176px;
+    margin-top: 0px;
+    max-width: 1160px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    position: relative;
+    width: 1160px;
+    z-index: 200;
+}
+.logo {
+    box-sizing: border-box;
+    color: rgb(232, 234, 237);
+    display: block;
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 61px;
+    left: 24px;
+    line-height: 32px;
+    margin-left: 0px;
+    margin-top: 0px;
+    max-width: 124px;
+    position: absolute;
+    top: 5px;
+    width: 124px;
+}
+.menu1 {
+     align-items: center;
+    box-sizing: border-box;
+    color: rgb(232, 234, 237);
+    display: flex;
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 64px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    width: 663.375px;
+}
+ul {
+    box-sizing: border-box;
+    color: rgb(232, 234, 237);
+    display: block;
+    font: 14px / 32px Cairo, sans-serif;
+    height: 32px;
+    list-style: outside none none;
+    text-align: center;
+    width: 663.375px;
+    overflow: hidden;
+}
+.menu_items {
+    box-sizing: border-box;
+    color: rgb(232, 234, 237);
+    cursor: pointer;
+    font: 14px / 32px Cairo, sans-serif;
+    height: 32px;
+    list-style-type: none;
+    margin-left:1%;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
