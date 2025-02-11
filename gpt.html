@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Centrata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: blue;
+            padding: 15px 0;
+            text-align: center;
+            height: 32px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+        .navbar ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .sub-navbar {
+            background-color: darkblue;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .sub-navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        .sub-navbar ul li {
+            margin: 0 10px;
+        }
+        .sub-navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            padding: 6px 10px;
+            transition: 0.3s;
+        }
+        .sub-navbar ul li a:hover {
+            background-color: #777;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Contatti</a></li>
+            <li><a href="#">Chi siamo</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Supporto</a></li>
+        </ul>
+    </div>
+    <div class="sub-navbar">
+        <ul>
+            <li><a href="#">Opzione 1</a></li>
+            <li><a href="#">Opzione 2</a></li>
+            <li><a href="#">Opzione 3</a></li>
+            <li><a href="#">Opzione 4</a></li>
+            <li><a href="#">Opzione 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>
