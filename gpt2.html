@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout con Div</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .main-container {
+            display: flex;
+            width: 99%;
+            gap: 10px;
+        }
+        .container {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .main-box {
+            width: 362.66px;
+            height: 348px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .side-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .side-box {
+            width: 362.66px;
+            height: 160px;
+            background-color: #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .bottom-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .bottom-box {
+            width: 230px;
+            height: 160px;
+            background-color: #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .side-panel {
+            width: 362.66px;
+            height: 802px;
+            background-color: #555;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .side-panel-box {
+            width: 100%;
+            height: 180px;
+            background-color: #777;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="main-box">Main Box</div>
+            <div class="side-container">
+                <div class="side-box">Side Box 1</div>
+                <div class="side-box">Side Box 2</div>
+            </div>
+            <div class="bottom-container">
+                <div class="bottom-box">Box 1</div>
+                <div class="bottom-box">Box 2</div>
+                <div class="bottom-box">Box 3</div>
+                <div class="bottom-box">Box 4</div>
+                <div class="bottom-box">Box 5</div>
+                <div class="bottom-box">Box 6</div>
+            </div>
+        </div>
+        <div class="side-panel">
+            <div class="side-panel-box">Panel Box 1</div>
+            <div class="side-panel-box">Panel Box 2</div>
+            <div class="side-panel-box">Panel Box 3</div>
+            <div class="side-panel-box">Panel Box 4</div>
+        </div>
+    </div>
+</body>s
+</html>
