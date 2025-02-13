@@ -109,7 +109,43 @@ li a :hover {
     background-color: blue;
 }
 .col2_riga1 .col2_riga1 {
-    width: 362.66px;
+    max-width: 362.66px;
+    width: 362.66;
+    max-height: 160px;
     height: 160px;
     display: flex;
+}
+div.colonna_1 {
+    width: 70%;
+    display: inline-block;
+}
+div.colonna_2 {
+    width: 29%;
+    display: inline-block;
+}
+div.col_1, div.col_2 {
+    width: 49%;
+    float: left;
+}
+div.col_1 {
+    background-color: blue;
+    min-height: 348px;
+}
+div.col_riga_1, div.col_riga_2 {
+    min-height: 160px;
+}
+div.articolo {
+    min-height: 200px;
+    display: inline-block;
+    width: 210px;
+}
+div.articolo_verticale {
+    min-height: 160px;
+}
+div.colonna_1, div.colonna_2 {
+    border: 1px solid black;
+    display: inline block;
+}
+.riga2 {
+    width: 100%;
 }
