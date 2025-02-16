@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.div-centrato {
+    width: 40%;
+    height: 60%;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(58, 58, 58, 0.2);
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+}
+.box-logo {
+    width: 30%;
+    text-align: center;
+}
+.box-registrazione {
+    width: 60%;
+    padding: 20px;
+    border-radius: 5%;
+    color: white;
+}
+.box-registrazione input {
+    width: 100%;
+    margin: 10px 5px;
+    padding: 8px;
+}
+.a {
+    font-size: small;
+    text-align: center;
+}
