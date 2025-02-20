@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nome Sviluppatore</title>
+    <style>
+        /* STILI CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f8f8f8;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #667eea, #072331);
+            color: white;
+        }
+
+        .btn {
+            background: white;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        input, textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Nome Sviluppatore</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Chi sono</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEZIONE HERO -->
+    <section id="hero">
+        <h2>Ciao, sono Nome</h2>
+        <p>Sviluppatore Web specializzato in HTML, CSS e JavaScript</p>
+        <a href="#portfolio" class="btn">Guarda i miei lavori</a>
+    </section>
+
+    <!-- SEZIONE PORTFOLIO -->
+    <section id="portfolio">
+        <h2 style="text-align: center;">Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Progetto 1</h3>
+                <p>Descrizione breve del progetto</p>
+            </div>
+            <div class="project">
+                <h3>Progetto 2</h3>
+                <p>Descrizione breve del progetto</p>
+            </div>
+            <div class="project">
+                <h3>Progetto 3</h3>
+                <p>Descrizione breve del progetto</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE CONTATTI -->
+    <section id="contact">
+        <h2>Contattami</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Nome Sviluppatore</p>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (name && email && message) {
+                alert(`Grazie, ${name}! Il tuo messaggio è stato inviato.`);
+            } else {
+                alert("Compila tutti i campi!");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -3,61 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div Centrato</title>
+    <title>Menu con Freccia Fissa</title>
     <style>
+        /* Corpo della pagina */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
+            padding: 0;
         }
-        .centered-div {
-            width: 40%;
-            height: 60%;
-            background-color: #3498db;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+        /* Stile del menu laterale (compattato inizialmente) */
+        .sidebar {
+            position: fixed;
+            left: -5%; /* Nascosto inizialmente a sinistra */
+            top: 50%; /* Spostato al 50% di altezza della pagina */
+            width: 5%;
+            height: 20%;
+            background-color: #333;
             color: white;
-            font-size: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            padding: 20px;
+            transition: left 0.3s ease; /* Animazione per l'apertura */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 10px;
+            transform: translateY(-50%); /* Centra il menu rispetto al 50% dell'altezza */
         }
-        .logo {
-            width: 30%;
+
+        /* Stile dei link nel menu */
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
             text-align: center;
-        }
-        .registration-form {
-            width: 60%;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            color: black;
-        }
-        .registration-form input {
             width: 100%;
-            margin: 10px 0;
-            padding: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Freccia per aprire/chiudere il menu */
+        .arrow-btn {
+            position: fixed; /* Rende la freccia fissa */
+            top: 50%; /* Posizionata al 50% di altezza della pagina */
+            right: -20px; /* Posizionata fuori dal menu */
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 20px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+            transform: translateY(-50%);
+        }
+
+        .arrow-btn:hover {
+            background-color: #575757;
+        }
+
+        /* Quando il menu è aperto */
+        .sidebar.open {
+            left: 0; /* Sposta il menu sulla sinistra */
+        }
+
+        /* Contenuto della pagina per testare lo scrolling */
+        .content {
+            margin-left: 6%; /* Lascia spazio per il menu */
+            padding: 20px;
+            height: 2000px; /* Per simulare lo scrolling */
         }
     </style>
 </head>
 <body>
-    <div class="centered-div">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" width="100%">
-        </div>
-        <div class="registration-form">
-            <h2>Registrati</h2>
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Registrati</button>
-            </form>
-        </div>
+
+    <!-- Bottone freccia per aprire/chiudere il menu -->
+    <button class="arrow-btn" onclick="toggleMenu()">&#8594;</button>
+
+    <!-- Menu laterale -->
+    <div class="sidebar" id="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="#">Servizi</a>
+        <a href="#">Contatti</a>
     </div>
+
+    <div class="content">
+        <h1>Benvenuto nella pagina</h1>
+        <p>Scorri per vedere l'effetto del menu che si apre dalla sinistra con una freccia.</p>
+    </div>
+
+    <script>
+        // Funzione per aprire/chiudere il menu
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const arrowBtn = document.querySelector('.arrow-btn');
+
+            sidebar.classList.toggle('open');
+
+            // Cambia la direzione della freccia
+            if (sidebar.classList.contains('open')) {
+                arrowBtn.innerHTML = '&#8592;'; // Freccia verso sinistra (chiudere)
+            } else {
+                arrowBtn.innerHTML = '&#8594;'; // Freccia verso destra (aprire)
+            }
+        }
+    </script>
+
 </body>
 </html>

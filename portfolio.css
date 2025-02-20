@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main-cont {
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.208);
+}
+
+.header-options{
+    color: white;
+    background-color: gray;
+}
+.nav-cont {
+    width: 100%;
+    height: 5vw;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    width: 30vw;
+    height: 5vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid blue;
+    padding-left: 2vw;
+}
+
+.img-logo {
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    float: left;
+}
+
+.navbar {
+    width: 70vw;
+    height: 5vw;
+    background-color: white;
+    display: flex;
+    /*margin: auto;*/
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5vw;
+    border-bottom: 2px solid blue;
+}
+
+.menu-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: blue;
+}
+
+.nav-el {
+    float: left;
+    font-size: 1.5vw;
+    display: block;
+    text-align: center;
+    padding: 2vw 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.main-cont2 {
+    width: 85vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.sec-1 {
+    width: 100%;
+}
+
+.sec-border {
+    border-color: rgba(0, 0, 255, 0.300);
+    border-style: groove;
+    border-radius: 1rem;
+}
+
+.marg-top {
+    margin-top: 2vw;
+}
+
+section {
+    width: 100%;
+}
+
+.hero-text {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    /*font-weight: bold;*/
+    font-family: serif;
+    letter-spacing: 0.2vw;
+    font-size: 3.2vw;
+    margin-top: 10vw;
+}
+
+.hero-text p {
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1vw;
+    margin-top: 3vw;
+    line-height: 3.6vw;
+}
+
+.hero-btn {
+    padding-top: 6.5vw;
+    padding-bottom: 6.5vw;
+    width: 15vw;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.btn {
+    background: linear-gradient(120deg, #1c2c54 0, #3944bb 100%);
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 1.3vw 1.5vw;
+    border-radius: 5px;
+    margin-bottom: 3vw;
+}
+
+.btn p {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.sec-2 {
+    width: 100%;
+}
+
+.hero-abme_txt {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-abme_txt h2 {
+    font-family: serif;
+    font-size: 2.7vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 2vw;
+}
+
+.hero-abme_txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 3vw;
+}
+
+.abme-col_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 100vh;
+}
+
+.abme-box_1  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 38vw;
+    height: 38vw;
+    background-color: bisque
+}
