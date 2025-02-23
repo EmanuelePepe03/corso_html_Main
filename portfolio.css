@@ -5,10 +5,14 @@
     text-decoration: none;
 }
 
+body {
+    background-color: rgba(0, 0, 255, 0.208);
+}
+
 .main-cont {
     width: 100%;
     display: inline-block;
-    background-color: rgba(0, 0, 255, 0.208);
+    /*background-color: rgba(0, 0, 255, 0.208);*/
 }
 
 .header-options{
@@ -207,10 +211,6 @@ section {
     justify-content: center;
 }
 
-.abme-box_1 {
-    overflow-y: auto;
-}
-
 .abme-box_title {
     height: 20%;
     width: 100%;
@@ -227,7 +227,8 @@ section {
 .square {
     width: 38vw;
     height: 38vw;
-    background-color: bisque
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .abme-box_txt {
@@ -239,5 +240,242 @@ section {
 }
 .abme-box_txt p {
     letter-spacing: 0.2vw;
-    line-height: 1.5vw;
+    line-height: 1.2vw;
+}
+
+.abme-box_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+}
+
+.abme-skills {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.450);
+    color: black;
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.abme-skills:hover {
+    transform: scale(1.2);
+    padding: 1.5vw;
+}
+
+.sec-3 {
+    width: 100%;
+}
+
+.prj-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prj-title {
+    font-family: serif;
+    font-size: 2.3vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 2vw;
+    padding-top: 1.5vw;
+}
+
+.prj-txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prj-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 3vw;
+}
+
+.prj-box_cont {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3vw;
+}
+
+.prj-box {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.marg-bottom {
+    margin-bottom: 2vw;
+}
+
+.prj-box img {
+    width: 100px;
+    height: 100px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.prj-box p {
+    font-size: 2vw;
+}
+
+.prj-box img.hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.prj-box:hover img.default-img {
+    opacity: 0;
+}
+
+.prj-box:hover img.hover-img {
+    opacity: 1;
+}
+
+.contact-title {
+    font-family: serif;
+    font-size: 2.3vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 2vw;
+    padding-top: 1.5vw;
+    justify-content: center;
+    display: flex;
+}
+
+.contact-txt {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    padding-bottom: 3vw;
+}
+
+.contact-box {
+    width: 70%;
+    
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    padding-top: 3vw;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+
+label {
+    padding-left: 1.5vw;
+}
+input, textarea {
+    width: 95%;
+    height: 3vw;
+    padding: 1.5vw;
+    margin: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 1vw;
+}
+textarea {
+    height: 6vw;
+}
+.btn2 {
+    width: 20%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: right;
+    margin-right: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+
+}
+.btn2:hover {
+    background: #0056b3;
+}
+
+footer {
+    margin-top: 1.8vw;
+    text-align: center;
+    padding: 0.9vw;
+    background: blue;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar {
+    height: 17vw;
+    width: 5vw;
+    background-color: white;
+    padding-top: 1vw;
+    position: fixed;
+    left: 0;
+    top: 18vw;
+    margin-bottom: 1vw;
+}
+
+/*.sid-el a {
+    display: block;
+    color: white;
+    padding: 0.5vw;
+    text-decoration: none;
+    font-size: 1vw;
+    transition: 0.3s;
+    text-align: center;
+}*/
+
+.sid-el a:hover {
+    background-color: blue;
+}
+
+.side-el {
+    width: 100%;
+    height: 4vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.side-icon {
+    font-size: 3vw;
+    color: black;
+}
+
+.i {
+    text-decoration: none;
 }

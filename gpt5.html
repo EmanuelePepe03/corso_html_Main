@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Verticale</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            height: 7vw;
+            width: 3vw;
+            background-color: #333;
+            padding-top: 1vw;
+            position: fixed;
+            left: 0;
+            top: 20%;
+            overflow-x: hidden;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-size: 1vw;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 3vw;
+            padding: 20px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#">H</a>
+        <a href="#">S</a>
+        <a href="#">C</a>
+        <a href="#">T</a>
+    </div>
+    <div class="content">
+        <h1>Benvenuto!</h1>
+        <p>Questa è una pagina con una sidebar verticale.</p>
+    </div>
+</body>
+</html>
